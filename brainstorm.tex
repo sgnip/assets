@@ -1,21 +1,32 @@
-\documentclass[nobuilddate,nochap]{apuntes}
+\documentclass{article}
+
+\usepackage{fancyhdr} % Cabeceras de página
+\usepackage{lastpage} % Módulo para añadir una referencia a la última página
+\usepackage{titling} % No tengo claro para qué es esto
+\usepackage[includemp, left=3cm,right=1cm,top=3cm,bottom=2cm, marginparwidth=1.6cm, marginparsep=0.7cm]{geometry} % Márgenes
 
 \title{Brainstorming}
+\date{\today}
 \author{SGNIP company}
+
+\fancyhf{}
+\fancypagestyle{plain}{%
+	\lhead{\small \itshape \thetitle\, -\, \thedate\, -\, PINGS}
+	\rhead{SGNIP LOGO}
+	\cfoot{\thepage\ of \pageref{LastPage}}
+	\rfoot{}
+}
 
 \newcommand{\tbg}{Table guy}
 \newcommand{\tbgs}{Table guys}
 \begin{document}
 
 \maketitle
-\newpage
 
-We made the brainstorm in 2 sessions, 
+\pagestyle{plain}
 
-\begin{itemize}
-\item 27-01 from 14:35 to 15:03
-\item 28-01 from 11:30 to 12:15
-\end{itemize}
+\begin{abstract} Brainstorming of ideas for the whatever the fuck this is, made in two different sessions: 27/01 from 14:35 to 15:03 and 28/01 from 11:30 to 12:15.
+\end{abstract}
 
 \section{asd}
 
@@ -28,7 +39,7 @@ Every one uses the same application, but it will be shown a different menu depen
 \begin{itemize}
 \item \textbf{Admin role: } The person or people in charge of banning and modifying manually what was automatically set by the system.
 
-\item\textbf{\tbg:} You can see as a \tbg what task has been assigned to you and you can mark them as finished or as a false fault. 
+\item\textbf{\tbg:} You can see as a \tbg what task has been assigned to you and you can mark them as finished or as a false fault.
 
 You can also ask for more information about the fault if it's not precise enough.
 
@@ -42,9 +53,9 @@ Every one is a user and everyone can report faults but not  every one can be \tb
 We talked about 2 options:
 
 \begin{itemize}
-\item The user sets the priority of the task and the system has to take on account the liability of the user to set a real priority to the task. 
+\item The user sets the priority of the task and the system has to take on account the liability of the user to set a real priority to the task.
 
-\item There are tags and categories the user can add to the report and the system computes a real priority to the task. 
+\item There are tags and categories the user can add to the report and the system computes a real priority to the task.
 
 Within this idea we need to add \textit{others} category, just in case.
 \end{itemize}
@@ -53,7 +64,7 @@ Within this idea we need to add \textit{others} category, just in case.
 
 We have to distinguish 2 cases, if you are inside a building or not.
 
-If you are not inside a building, the location will be automatic by GPS technology, but when faults are relative to inside of buildings material it will be necessary to ask the user the exact location. This will be ask by an interactive map. 
+If you are not inside a building, the location will be automatic by GPS technology, but when faults are relative to inside of buildings material it will be necessary to ask the user the exact location. This will be ask by an interactive map.
 
 
 We will also use WiFi location because sometimes GPS is a slow technology to be set and reliable.
@@ -64,13 +75,13 @@ The system automatically assigns tasks, depending on the location of the faults 
 Admin can set manually the task assignation.
 
 \subsection{Graphical interface}
-We have Guille's application in which we will add just a profile page in which users can see 
+We have Guille's application in which we will add just a profile page in which users can see
 \begin{itemize}
 \item the false faults they have reported .
 \item the fault's reported state.
 \end{itemize}
 
-Every user's profile will be visible to the admin but he won't be able to see any personal data. 
+Every user's profile will be visible to the admin but he won't be able to see any personal data.
 
 The admin can see profiles so before he can ban an user, he can check how many false and repeated faults he have reported.
 
@@ -94,12 +105,12 @@ When a fault is fix, the system will notify the user who reported it.
 \section{Question to ask}
 
 \begin{itemize}
-\item When an emergency occurs in UAM, everyone will get a notification  of the emergency. 
+\item When an emergency occurs in UAM, everyone will get a notification  of the emergency.
 \item Gaming experience?
 
 \end{itemize}
 
 
- 
+
 
 \end{document}
