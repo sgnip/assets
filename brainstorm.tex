@@ -4,6 +4,7 @@
 \usepackage{lastpage} % Módulo para añadir una referencia a la última página
 \usepackage{titling} % No tengo claro para qué es esto
 \usepackage[includemp, left=3cm,right=1cm,top=3cm,bottom=2cm, marginparwidth=1.6cm, marginparsep=0.7cm]{geometry} % Márgenes
+\usepackage{xspace}
 
 \title{Brainstorming}
 \date{\today}
@@ -17,8 +18,8 @@
 	\rfoot{}
 }
 
-\newcommand{\tbg}{Table guy}
-\newcommand{\tbgs}{Table guys}
+\newcommand{\tbg}{Table guy\xspace}
+\newcommand{\tbgs}{Table guys\xspace}
 \begin{document}
 
 \maketitle
@@ -34,7 +35,6 @@
 
 We define the user as the reporter of the incidence and the \tbgs as the people in charge of fixing the faults.
 
-
 Every one uses the same application, but it will be shown a different menu depending on the role after the authentication.
 
 \begin{itemize}
@@ -48,7 +48,7 @@ You can also ask for more information about the fault if it's not precise enough
 
 \end{itemize}
 
-Every one is a user and everyone can report faults but not  every one can be \tbg or user.
+Everyone is a user and everyone can report faults but not  every one can be \tbg or user.
 
 \subsection{Task priority}
 We talked about 2 options:
